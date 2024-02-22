@@ -1,0 +1,14 @@
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Release\AiVisionCodeOrganizador.exe.config
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Release\AiVisionCodeOrganizador.exe
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Release\AiVisionCodeOrganizador.pdb
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Release\Ookii.Dialogs.Wpf.dll
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Release\Ookii.Dialogs.Wpf.pdb
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Release\Ookii.Dialogs.Wpf.xml
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.csproj.AssemblyReference.cache
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.Form1.resources
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.Properties.Resources.resources
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.csproj.GenerateResource.cache
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.csproj.CoreCompileInputs.cache
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.csproj.CopyComplete
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.exe
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.pdb

@@ -218,10 +218,8 @@ namespace AiVisionCodeOrganizador
 
         private void BackgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            // Código para exibir uma mensagem
             MessageBox.Show("Organização concluída com sucesso!", "Concluído", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            // Código para redefinir variáveis
             Barra_De_Progresso.Value = 0;
             PictureBox_Verify1.Visible = false;
             PictureBox_Verify2.Visible = false;

@@ -89,13 +89,14 @@
             // 
             // Button_Update
             // 
-            this.Button_Update.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Button_Update.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Button_Update.Font = new System.Drawing.Font("JetBrains Mono NL", 8.249999F, System.Drawing.FontStyle.Bold);
             this.Button_Update.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Button_Update.Location = new System.Drawing.Point(3, 20);
+            this.Button_Update.Location = new System.Drawing.Point(3, 3);
             this.Button_Update.Name = "Button_Update";
-            this.Button_Update.Size = new System.Drawing.Size(97, 23);
+            this.Button_Update.Size = new System.Drawing.Size(97, 40);
             this.Button_Update.TabIndex = 0;
-            this.Button_Update.Text = "Atualizar app";
+            this.Button_Update.Text = "Atualizar Aplicativo";
             this.Button_Update.UseVisualStyleBackColor = true;
             this.Button_Update.Click += new System.EventHandler(this.Button_Update_Click);
             // 
@@ -127,6 +128,7 @@
             // Button_Dev
             // 
             this.Button_Dev.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Button_Dev.Font = new System.Drawing.Font("JetBrains Mono NL", 8.249999F, System.Drawing.FontStyle.Bold);
             this.Button_Dev.Location = new System.Drawing.Point(3, 3);
             this.Button_Dev.Name = "Button_Dev";
             this.Button_Dev.Size = new System.Drawing.Size(97, 40);
@@ -138,6 +140,7 @@
             // Button_GitHub
             // 
             this.Button_GitHub.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Button_GitHub.Font = new System.Drawing.Font("JetBrains Mono NL", 8.249999F, System.Drawing.FontStyle.Bold);
             this.Button_GitHub.Location = new System.Drawing.Point(106, 3);
             this.Button_GitHub.Name = "Button_GitHub";
             this.Button_GitHub.Size = new System.Drawing.Size(97, 40);
@@ -149,6 +152,7 @@
             // Button_Discord
             // 
             this.Button_Discord.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Button_Discord.Font = new System.Drawing.Font("JetBrains Mono NL", 8.249999F, System.Drawing.FontStyle.Bold);
             this.Button_Discord.Location = new System.Drawing.Point(209, 3);
             this.Button_Discord.Name = "Button_Discord";
             this.Button_Discord.Size = new System.Drawing.Size(98, 40);
@@ -181,39 +185,42 @@
             // Button_Entrada
             // 
             this.Button_Entrada.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Button_Entrada.Font = new System.Drawing.Font("JetBrains Mono NL", 8.249999F, System.Drawing.FontStyle.Bold);
             this.Button_Entrada.Location = new System.Drawing.Point(106, 3);
             this.Button_Entrada.Name = "Button_Entrada";
             this.Button_Entrada.Size = new System.Drawing.Size(97, 50);
             this.Button_Entrada.TabIndex = 0;
-            this.Button_Entrada.Text = "Pasta_Entrada";
+            this.Button_Entrada.Text = "Pasta de Entrada";
             this.Button_Entrada.UseVisualStyleBackColor = true;
             this.Button_Entrada.Click += new System.EventHandler(this.Button_Entrada_Click);
             // 
             // Button_Saida
             // 
             this.Button_Saida.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Button_Saida.Font = new System.Drawing.Font("JetBrains Mono NL", 8.249999F, System.Drawing.FontStyle.Bold);
             this.Button_Saida.Location = new System.Drawing.Point(106, 82);
             this.Button_Saida.Name = "Button_Saida";
             this.Button_Saida.Size = new System.Drawing.Size(97, 50);
             this.Button_Saida.TabIndex = 1;
-            this.Button_Saida.Text = "Pasta_Saida";
+            this.Button_Saida.Text = "Pasta de Saída";
             this.Button_Saida.UseVisualStyleBackColor = true;
             this.Button_Saida.Click += new System.EventHandler(this.Button_Saida_Click);
             // 
             // Button_Organizar
             // 
             this.Button_Organizar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Button_Organizar.Font = new System.Drawing.Font("JetBrains Mono NL", 8.249999F, System.Drawing.FontStyle.Bold);
             this.Button_Organizar.Location = new System.Drawing.Point(106, 161);
             this.Button_Organizar.Name = "Button_Organizar";
             this.Button_Organizar.Size = new System.Drawing.Size(97, 50);
             this.Button_Organizar.TabIndex = 2;
-            this.Button_Organizar.Text = "Button_Organizar";
+            this.Button_Organizar.Text = "Organizar os Arquivos";
             this.Button_Organizar.UseVisualStyleBackColor = true;
             this.Button_Organizar.Click += new System.EventHandler(this.Button_Organizar_Click);
             // 
             // PictureBox_Verify1
             // 
-            this.PictureBox_Verify1.Image = global::AiVisionCodeOrganizador.Properties.Resources.icon_verify;
+            this.PictureBox_Verify1.Image = global::AiVisionCodeOrganizador.Properties.Resources.okay;
             this.PictureBox_Verify1.Location = new System.Drawing.Point(209, 3);
             this.PictureBox_Verify1.Name = "PictureBox_Verify1";
             this.PictureBox_Verify1.Size = new System.Drawing.Size(50, 50);
@@ -224,7 +231,7 @@
             // 
             // PictureBox_Verify2
             // 
-            this.PictureBox_Verify2.Image = global::AiVisionCodeOrganizador.Properties.Resources.icon_verify;
+            this.PictureBox_Verify2.Image = global::AiVisionCodeOrganizador.Properties.Resources.okay;
             this.PictureBox_Verify2.Location = new System.Drawing.Point(209, 82);
             this.PictureBox_Verify2.Name = "PictureBox_Verify2";
             this.PictureBox_Verify2.Size = new System.Drawing.Size(50, 50);
