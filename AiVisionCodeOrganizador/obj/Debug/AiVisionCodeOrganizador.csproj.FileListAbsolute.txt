@@ -1,0 +1,10 @@
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Debug\AiVisionCodeOrganizador.exe.config
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Debug\AiVisionCodeOrganizador.exe
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Debug\AiVisionCodeOrganizador.pdb
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Debug\AiVisionCodeOrganizador.csproj.AssemblyReference.cache
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Debug\AiVisionCodeOrganizador.Form1.resources
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Debug\AiVisionCodeOrganizador.Properties.Resources.resources
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Debug\AiVisionCodeOrganizador.csproj.GenerateResource.cache
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Debug\AiVisionCodeOrganizador.csproj.CoreCompileInputs.cache
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Debug\AiVisionCodeOrganizador.exe
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Debug\AiVisionCodeOrganizador.pdb
