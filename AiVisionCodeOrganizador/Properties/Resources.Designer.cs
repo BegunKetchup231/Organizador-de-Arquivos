@@ -63,6 +63,16 @@ namespace AiVisionCodeOrganizador.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Designer__16_ {
+            get {
+                object obj = ResourceManager.GetObject("Designer (16)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_verify {
             get {
                 object obj = ResourceManager.GetObject("icon_verify", resourceCulture);
@@ -86,6 +96,16 @@ namespace AiVisionCodeOrganizador.Properties {
         internal static System.Drawing.Bitmap okay {
             get {
                 object obj = ResourceManager.GetObject("okay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap peeking_into_frame_with_neutral_face {
+            get {
+                object obj = ResourceManager.GetObject("peeking into frame with neutral face", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

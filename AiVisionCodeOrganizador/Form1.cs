@@ -37,7 +37,7 @@ namespace AiVisionCodeOrganizador
             PictureBox_Verify2.Visible = false;
 
             // Desativar o TabStop para todos os botões
-            Button_Update.TabStop = false;
+            //Button_Update.TabStop = false;
             Button_Entrada.TabStop = false;
             Button_Saida.TabStop = false;
             Button_Organizar.TabStop = false;
@@ -49,7 +49,7 @@ namespace AiVisionCodeOrganizador
             Barra_De_Progresso.TabStop = false;
 
             // Corrigir bug do foco dos botões
-            Button_Update.Click += Botao_Fake_Click;
+            //Button_Update.Click += Botao_Fake_Click;
             Button_Entrada.Click += Botao_Fake_Click;
             Button_Saida.Click += Botao_Fake_Click;
             Button_Organizar.Click += Botao_Fake_Click;
