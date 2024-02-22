@@ -1,11 +1,14 @@
-﻿using System;
+﻿using Ookii.Dialogs.Wpf;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.IO;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,41 +24,94 @@ namespace AiVisionCodeOrganizador
         {
             InitializeComponent();
 
-            this.Size = new Size(331, 405);
+            // Define o estilo de borda como FixedDialog
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            Size = new Size(331, 405);
 
             backgroundWorker1.WorkerReportsProgress = true;
-
             backgroundWorker1.DoWork += BackgroundWorker1_DoWork;
+
+
+            PictureBox_Verify1.Visible = false;
+            PictureBox_Verify2.Visible = false;
+
+            // Desativar o TabStop para todos os botões
+            Button_Update.TabStop = false;
+            Button_Entrada.TabStop = false;
+            Button_Saida.TabStop = false;
+            Button_Organizar.TabStop = false;
+            Button_Dev.TabStop = false;
+            Button_Discord.TabStop = false;
+            Button_GitHub.TabStop = false;
+
+            // Desativar o TabStop para a Barra_De_Progresso
+            Barra_De_Progresso.TabStop = false;
+
+            // Corrigir bug do foco dos botões
+            Button_Update.Click += Botao_Fake_Click;
+            Button_Entrada.Click += Botao_Fake_Click;
+            Button_Saida.Click += Botao_Fake_Click;
+            Button_Organizar.Click += Botao_Fake_Click;
+            Button_Dev.Click += Botao_Fake_Click;
+            Button_Discord.Click += Botao_Fake_Click;
+            Button_GitHub.Click += Botao_Fake_Click;
+        }
+
+        private void Botao_Fake_Click(object sender, EventArgs e)
+        {
+            // Mover o foco para o próximo controle no formulário
+            SelectNextControl((Control)sender, true, true, true, true);
+        }
+
+        private void ExibirDialogoSelecaoPasta(string folderVariable, PictureBox pictureBox)
+        {
+            var dialogoPasta = new VistaFolderBrowserDialog
+            {
+                // Configurações opcionais
+                Description = "Selecione uma pasta",
+                UseDescriptionForTitle = true
+            };
+
+            // Exibe o diálogo e verifica se o usuário pressionou OK
+            bool? resultado = dialogoPasta.ShowDialog();
+
+            if (resultado.GetValueOrDefault())  // Verifica se o resultado é true ou se é null (cancelado)
+            {
+                // Atualiza a variável de pasta correspondente
+                if (folderVariable.Equals("sourceFolder"))
+                {
+                    sourceFolder = dialogoPasta.SelectedPath;
+                }
+                else if (folderVariable.Equals("outputFolder"))
+                {
+                    outputFolder = dialogoPasta.SelectedPath;
+                }
+
+                // Atualiza o PictureBox fornecido para torná-lo visível
+                pictureBox.Visible = true;
+            }
         }
 
         private void Button_Entrada_Click(object sender, EventArgs e)
         {
-            var dialog = new FolderBrowserDialog();
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
-                sourceFolder = dialog.SelectedPath;
-                PictureBox_Verify1.Visible = true; // Mostra o ícone de "verificado"
-            }
+            ExibirDialogoSelecaoPasta("sourceFolder", PictureBox_Verify1);
         }
+
 
         private void Button_Saida_Click(object sender, EventArgs e)
         {
-            var dialog = new FolderBrowserDialog();
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
-                outputFolder = dialog.SelectedPath;
-                PictureBox_Verify2.Visible = true; // Mostra o ícone de "verificado"
-            }
-
+            ExibirDialogoSelecaoPasta("outputFolder", PictureBox_Verify2);
         }
 
         private void BackgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
             OrganizeFiles(sourceFolder, outputFolder);
         }
+
         private void BackgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
-            progressBar1.Value = e.ProgressPercentage;
+            Barra_De_Progresso.Value = e.ProgressPercentage;
 
             // Verifica se o progresso atingiu 100%
             if (e.ProgressPercentage == 100)
@@ -64,7 +120,7 @@ namespace AiVisionCodeOrganizador
                 MessageBox.Show("Organização concluída com sucesso!", "Concluído", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 // Reset a ProgressBar após a organização
-                progressBar1.Value = 0;
+                Barra_De_Progresso.Value = 0;
 
                 // Esconde o ícone de "verificado"
                 PictureBox_Verify1.Visible = false;
@@ -157,14 +213,24 @@ namespace AiVisionCodeOrganizador
                 return;
             }
 
-            OrganizeFiles(sourceFolder, outputFolder);
-
+            backgroundWorker1.RunWorkerAsync();
         }
 
-        private void Botao_Dev_Click(object sender, EventArgs e)
+        private void BackgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            string url = "https://keepo.io/begunketchup231/";
+            // Código para exibir uma mensagem
+            MessageBox.Show("Organização concluída com sucesso!", "Concluído", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+            // Código para redefinir variáveis
+            Barra_De_Progresso.Value = 0;
+            PictureBox_Verify1.Visible = false;
+            PictureBox_Verify2.Visible = false;
+            sourceFolder = "";
+            outputFolder = "";
+        }
+
+        private void OpenUrlInBrowser(string url)
+        {
             try
             {
                 Process.Start(new ProcessStartInfo
@@ -175,90 +241,29 @@ namespace AiVisionCodeOrganizador
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Não foi possível abrir o link: " + ex.Message);
+                MessageBox.Show($"Não foi possível abrir o link: {ex.Message}");
                 MessageBox.Show("Contate o desenvolvedor");
             }
         }
 
         private void Button_Dev_Click(object sender, EventArgs e)
         {
-            string url = "https://keepo.io/begunketchup231/";
-
-            try
-            {
-                Process.Start(new ProcessStartInfo
-                {
-                    FileName = url,
-                    UseShellExecute = true
-                });
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Não foi possível abrir o link: " + ex.Message);
-                MessageBox.Show("Contate o desenvolvedor");
-            }
+            OpenUrlInBrowser("https://keepo.io/begunketchup231/");
         }
 
         private void Button_GitHub_Click(object sender, EventArgs e)
         {
-            string url = "https://github.com/BegunKetchup231";
-
-            try
-            {
-                Process.Start(new ProcessStartInfo
-                {
-                    FileName = url,
-                    UseShellExecute = true
-                });
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Não foi possível abrir o link: " + ex.Message);
-                MessageBox.Show("Contate o desenvolvedor");
-            }
+            OpenUrlInBrowser("https://github.com/BegunKetchup231");
         }
 
         private void Button_Discord_Click(object sender, EventArgs e)
         {
-            var url = "https://discord.com/invite/Tq8gmMpu5C";
-
-            try
-            {
-                Process.Start(new ProcessStartInfo
-                {
-                    FileName = url,
-                    UseShellExecute = true
-                });
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Não foi possível abrir o link: " + ex.Message);
-                MessageBox.Show("Contate o desenvolvedor");
-            }
+            OpenUrlInBrowser("https://discord.com/invite/Tq8gmMpu5C");
         }
 
         private void Button_Update_Click(object sender, EventArgs e)
         {
-            string url = "https://github.com/BegunKetchup231/Organizador_2";
-
-            try
-            {
-                Process.Start(new ProcessStartInfo
-                {
-                    FileName = url,
-                    UseShellExecute = true
-                });
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Não foi possível abrir o link: " + ex.Message);
-                MessageBox.Show("Contate o desenvolvedor");
-            }
-        }
-
-        private void Modo_Cor_Click(object sender, EventArgs e)
-        {
-
+            OpenUrlInBrowser("https://github.com/BegunKetchup231/Organizador_2");
         }
     }
 }

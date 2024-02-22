@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.Button_Update = new System.Windows.Forms.Button();
-            this.Modo_Cor = new System.Windows.Forms.Button();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.Barra_De_Progresso = new System.Windows.Forms.ProgressBar();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.Button_Dev = new System.Windows.Forms.Button();
             this.Button_GitHub = new System.Windows.Forms.Button();
@@ -44,6 +44,7 @@
             this.PictureBox_Verify1 = new System.Windows.Forms.PictureBox();
             this.PictureBox_Verify2 = new System.Windows.Forms.PictureBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.Botao_Fake = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -57,18 +58,18 @@
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.progressBar1, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.Barra_De_Progresso, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(316, 366);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(316, 368);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -78,19 +79,19 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.Controls.Add(this.Button_Update, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.Modo_Cor, 2, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(310, 45);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(310, 46);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // Button_Update
             // 
             this.Button_Update.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Button_Update.Location = new System.Drawing.Point(3, 19);
+            this.Button_Update.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Button_Update.Location = new System.Drawing.Point(3, 20);
             this.Button_Update.Name = "Button_Update";
             this.Button_Update.Size = new System.Drawing.Size(97, 23);
             this.Button_Update.TabIndex = 0;
@@ -98,24 +99,13 @@
             this.Button_Update.UseVisualStyleBackColor = true;
             this.Button_Update.Click += new System.EventHandler(this.Button_Update_Click);
             // 
-            // Modo_Cor
+            // Barra_De_Progresso
             // 
-            this.Modo_Cor.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Modo_Cor.Location = new System.Drawing.Point(209, 19);
-            this.Modo_Cor.Name = "Modo_Cor";
-            this.Modo_Cor.Size = new System.Drawing.Size(98, 23);
-            this.Modo_Cor.TabIndex = 1;
-            this.Modo_Cor.Text = "Modo Escuro";
-            this.Modo_Cor.UseVisualStyleBackColor = true;
-            this.Modo_Cor.Click += new System.EventHandler(this.Modo_Cor_Click);
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.progressBar1.Location = new System.Drawing.Point(3, 347);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(310, 16);
-            this.progressBar1.TabIndex = 1;
+            this.Barra_De_Progresso.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Barra_De_Progresso.Location = new System.Drawing.Point(3, 350);
+            this.Barra_De_Progresso.Name = "Barra_De_Progresso";
+            this.Barra_De_Progresso.Size = new System.Drawing.Size(310, 15);
+            this.Barra_De_Progresso.TabIndex = 1;
             // 
             // tableLayoutPanel3
             // 
@@ -127,11 +117,11 @@
             this.tableLayoutPanel3.Controls.Add(this.Button_GitHub, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.Button_Discord, 2, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 296);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 298);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(310, 45);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(310, 46);
             this.tableLayoutPanel3.TabIndex = 2;
             // 
             // Button_Dev
@@ -139,7 +129,7 @@
             this.Button_Dev.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Button_Dev.Location = new System.Drawing.Point(3, 3);
             this.Button_Dev.Name = "Button_Dev";
-            this.Button_Dev.Size = new System.Drawing.Size(97, 39);
+            this.Button_Dev.Size = new System.Drawing.Size(97, 40);
             this.Button_Dev.TabIndex = 0;
             this.Button_Dev.Text = "Dev_";
             this.Button_Dev.UseVisualStyleBackColor = true;
@@ -150,7 +140,7 @@
             this.Button_GitHub.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Button_GitHub.Location = new System.Drawing.Point(106, 3);
             this.Button_GitHub.Name = "Button_GitHub";
-            this.Button_GitHub.Size = new System.Drawing.Size(97, 39);
+            this.Button_GitHub.Size = new System.Drawing.Size(97, 40);
             this.Button_GitHub.TabIndex = 1;
             this.Button_GitHub.Text = "GitHub";
             this.Button_GitHub.UseVisualStyleBackColor = true;
@@ -161,7 +151,7 @@
             this.Button_Discord.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Button_Discord.Location = new System.Drawing.Point(209, 3);
             this.Button_Discord.Name = "Button_Discord";
-            this.Button_Discord.Size = new System.Drawing.Size(98, 39);
+            this.Button_Discord.Size = new System.Drawing.Size(98, 40);
             this.Button_Discord.TabIndex = 2;
             this.Button_Discord.Text = "Discord";
             this.Button_Discord.UseVisualStyleBackColor = true;
@@ -179,13 +169,13 @@
             this.tableLayoutPanel4.Controls.Add(this.PictureBox_Verify1, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.PictureBox_Verify2, 2, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 54);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 55);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 3;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(310, 236);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(310, 237);
             this.tableLayoutPanel4.TabIndex = 3;
             // 
             // Button_Entrada
@@ -202,7 +192,7 @@
             // Button_Saida
             // 
             this.Button_Saida.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Button_Saida.Location = new System.Drawing.Point(106, 81);
+            this.Button_Saida.Location = new System.Drawing.Point(106, 82);
             this.Button_Saida.Name = "Button_Saida";
             this.Button_Saida.Size = new System.Drawing.Size(97, 50);
             this.Button_Saida.TabIndex = 1;
@@ -213,7 +203,7 @@
             // Button_Organizar
             // 
             this.Button_Organizar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Button_Organizar.Location = new System.Drawing.Point(106, 159);
+            this.Button_Organizar.Location = new System.Drawing.Point(106, 161);
             this.Button_Organizar.Name = "Button_Organizar";
             this.Button_Organizar.Size = new System.Drawing.Size(97, 50);
             this.Button_Organizar.TabIndex = 2;
@@ -223,28 +213,55 @@
             // 
             // PictureBox_Verify1
             // 
+            this.PictureBox_Verify1.Image = global::AiVisionCodeOrganizador.Properties.Resources.icon_verify;
             this.PictureBox_Verify1.Location = new System.Drawing.Point(209, 3);
             this.PictureBox_Verify1.Name = "PictureBox_Verify1";
             this.PictureBox_Verify1.Size = new System.Drawing.Size(50, 50);
+            this.PictureBox_Verify1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBox_Verify1.TabIndex = 3;
             this.PictureBox_Verify1.TabStop = false;
+            this.PictureBox_Verify1.Visible = false;
             // 
             // PictureBox_Verify2
             // 
-            this.PictureBox_Verify2.Location = new System.Drawing.Point(209, 81);
+            this.PictureBox_Verify2.Image = global::AiVisionCodeOrganizador.Properties.Resources.icon_verify;
+            this.PictureBox_Verify2.Location = new System.Drawing.Point(209, 82);
             this.PictureBox_Verify2.Name = "PictureBox_Verify2";
             this.PictureBox_Verify2.Size = new System.Drawing.Size(50, 50);
+            this.PictureBox_Verify2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBox_Verify2.TabIndex = 4;
             this.PictureBox_Verify2.TabStop = false;
+            this.PictureBox_Verify2.Visible = false;
+            // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.BackgroundWorker1_RunWorkerCompleted);
+            // 
+            // Botao_Fake
+            // 
+            this.Botao_Fake.BackColor = System.Drawing.Color.Transparent;
+            this.Botao_Fake.FlatAppearance.BorderSize = 0;
+            this.Botao_Fake.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Botao_Fake.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Botao_Fake.Location = new System.Drawing.Point(451, 404);
+            this.Botao_Fake.Name = "Botao_Fake";
+            this.Botao_Fake.Size = new System.Drawing.Size(75, 23);
+            this.Botao_Fake.TabIndex = 5;
+            this.Botao_Fake.UseVisualStyleBackColor = false;
+            this.Botao_Fake.Click += new System.EventHandler(this.Botao_Fake_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(316, 366);
+            this.ClientSize = new System.Drawing.Size(319, 368);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.Botao_Fake);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Ai Vision Code Organizador";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -260,8 +277,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button Button_Update;
-        private System.Windows.Forms.Button Modo_Cor;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar Barra_De_Progresso;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Button Button_Dev;
         private System.Windows.Forms.Button Button_GitHub;
@@ -273,6 +289,7 @@
         private System.Windows.Forms.PictureBox PictureBox_Verify1;
         private System.Windows.Forms.PictureBox PictureBox_Verify2;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Button Botao_Fake;
     }
 }
 

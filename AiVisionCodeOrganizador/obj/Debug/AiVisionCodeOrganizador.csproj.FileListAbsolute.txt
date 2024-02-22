@@ -8,3 +8,7 @@ C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVi
 C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Debug\AiVisionCodeOrganizador.csproj.CoreCompileInputs.cache
 C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Debug\AiVisionCodeOrganizador.exe
 C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Debug\AiVisionCodeOrganizador.pdb
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Debug\Ookii.Dialogs.Wpf.dll
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Debug\Ookii.Dialogs.Wpf.pdb
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Debug\Ookii.Dialogs.Wpf.xml
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Debug\AiVisionCodeOrganizador.csproj.CopyComplete
