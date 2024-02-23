@@ -73,6 +73,16 @@ namespace AiVisionCodeOrganizador.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fundobotaoroxo2_png {
+            get {
+                object obj = ResourceManager.GetObject("fundobotaoroxo2.png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_verify {
             get {
                 object obj = ResourceManager.GetObject("icon_verify", resourceCulture);

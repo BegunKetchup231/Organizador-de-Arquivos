@@ -29,8 +29,13 @@ namespace AiVisionCodeOrganizador
             MaximizeBox = false;
             Size = new Size(331, 405);
 
-            backgroundWorker1.WorkerReportsProgress = true;
+            // Configurar o BackgroundWorker
+            backgroundWorker1 = new BackgroundWorker
+            {
+                WorkerReportsProgress = true
+            };
             backgroundWorker1.DoWork += BackgroundWorker1_DoWork;
+            backgroundWorker1.ProgressChanged += BackgroundWorker1_ProgressChanged;
 
 
             PictureBox_Verify1.Visible = false;
@@ -111,26 +116,31 @@ namespace AiVisionCodeOrganizador
 
         private void BackgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
-            Barra_De_Progresso.Value = e.ProgressPercentage;
-
-            // Verifica se o progresso atingiu 100%
-            if (e.ProgressPercentage == 100)
+            // Atualiza a Barra_De_Progresso no thread da interface do usuário
+            Invoke(new MethodInvoker(delegate
             {
-                // Mostra a mensagem quando a organização estiver concluída
-                MessageBox.Show("Organização concluída com sucesso!", "Concluído", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Barra_De_Progresso.Value = e.ProgressPercentage;
 
-                // Reset a ProgressBar após a organização
-                Barra_De_Progresso.Value = 0;
+                // Verifica se o progresso atingiu 100%
+                if (e.ProgressPercentage == 100)
+                {
+                    // Mostra a mensagem quando a organização estiver concluída
+                    MessageBox.Show("Organização concluída com sucesso!", "Concluído", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Esconde o ícone de "verificado"
-                PictureBox_Verify1.Visible = false;
-                PictureBox_Verify2.Visible = false;
+                    // Reset a ProgressBar após a organização
+                    Barra_De_Progresso.Value = 0;
 
-                // Reset das pastas de entrada e saída
-                sourceFolder = "";
-                outputFolder = "";
-            }
+                    // Esconde o ícone de "verificado"
+                    PictureBox_Verify1.Visible = false;
+                    PictureBox_Verify2.Visible = false;
+
+                    // Reset das pastas de entrada e saída
+                    sourceFolder = "";
+                    outputFolder = "";
+                }
+            }));
         }
+
 
         private void OrganizeFiles(string sourceFolder, string outputFolder)
         {

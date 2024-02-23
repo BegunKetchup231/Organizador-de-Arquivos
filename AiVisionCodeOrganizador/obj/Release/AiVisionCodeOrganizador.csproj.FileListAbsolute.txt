@@ -12,3 +12,10 @@ C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVi
 C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.csproj.CopyComplete
 C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.exe
 C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.pdb
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Release\AiVisionCodeOrganizador.exe.manifest
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Release\AiVisionCodeOrganizador.application
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.TrustInfo.xml
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.exe.manifest
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.application
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Release\AiVisionCodeOrganizador.exe.CodeAnalysisLog.xml
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Release\AiVisionCodeOrganizador.exe.lastcodeanalysissucceeded
