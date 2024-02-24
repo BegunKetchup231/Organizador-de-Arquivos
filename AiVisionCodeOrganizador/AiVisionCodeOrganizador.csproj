@@ -156,6 +156,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icone_pasta.ico" />
+    <None Include="Resources\fundo_botao_xp.png" />
+    <None Include="Resources\equation meme.png" />
+    <None Include="Resources\icons8-organization-50.png" />
+    <None Include="Resources\icons8-organization-80.png" />
+    <None Include="Resources\icons8-auto-deskew-50.png" />
+    <None Include="Resources\icons8-folder-50.png" />
+    <None Include="Resources\icons8-github-50.png" />
+    <None Include="Resources\icons8-discord-50.png" />
+    <None Include="Resources\icons8-dev-50.png" />
+    <None Include="Resources\iconpasta1.png" />
+    <None Include="Resources\iconpasta.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">

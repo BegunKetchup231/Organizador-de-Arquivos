@@ -1,16 +1,11 @@
 ﻿using Ookii.Dialogs.Wpf;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
-using System.Drawing.Drawing2D;
 using System.IO;
 using System.Linq;
-using System.Media;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AiVisionCodeOrganizador
@@ -24,25 +19,16 @@ namespace AiVisionCodeOrganizador
         {
             InitializeComponent();
 
-            // Define o estilo de borda como FixedDialog
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
-            Size = new Size(331, 405);
+            Size = new Size(335, 407);
 
-            // Configurar o BackgroundWorker
-            backgroundWorker1 = new BackgroundWorker
-            {
-                WorkerReportsProgress = true
-            };
+            backgroundWorker1.WorkerReportsProgress = true;
             backgroundWorker1.DoWork += BackgroundWorker1_DoWork;
-            backgroundWorker1.ProgressChanged += BackgroundWorker1_ProgressChanged;
 
+            Button_Entrada.Image = Properties.Resources.icon_entrada;
+            Button_Saida.Image = Properties.Resources.icon_saida;
 
-            PictureBox_Verify1.Visible = false;
-            PictureBox_Verify2.Visible = false;
-
-            // Desativar o TabStop para todos os botões
-            //Button_Update.TabStop = false;
             Button_Entrada.TabStop = false;
             Button_Saida.TabStop = false;
             Button_Organizar.TabStop = false;
@@ -50,11 +36,8 @@ namespace AiVisionCodeOrganizador
             Button_Discord.TabStop = false;
             Button_GitHub.TabStop = false;
 
-            // Desativar o TabStop para a Barra_De_Progresso
             Barra_De_Progresso.TabStop = false;
 
-            // Corrigir bug do foco dos botões
-            //Button_Update.Click += Botao_Fake_Click;
             Button_Entrada.Click += Botao_Fake_Click;
             Button_Saida.Click += Botao_Fake_Click;
             Button_Organizar.Click += Botao_Fake_Click;
@@ -65,82 +48,84 @@ namespace AiVisionCodeOrganizador
 
         private void Botao_Fake_Click(object sender, EventArgs e)
         {
-            // Mover o foco para o próximo controle no formulário
             SelectNextControl((Control)sender, true, true, true, true);
         }
 
-        private void ExibirDialogoSelecaoPasta(string folderVariable, PictureBox pictureBox)
+        private void ExibirDialogoSelecaoPasta(string folderVariable)
         {
             var dialogoPasta = new VistaFolderBrowserDialog
             {
-                // Configurações opcionais
                 Description = "Selecione uma pasta",
                 UseDescriptionForTitle = true
             };
 
-            // Exibe o diálogo e verifica se o usuário pressionou OK
             bool? resultado = dialogoPasta.ShowDialog();
 
-            if (resultado.GetValueOrDefault())  // Verifica se o resultado é true ou se é null (cancelado)
+            if (resultado.GetValueOrDefault())
             {
-                // Atualiza a variável de pasta correspondente
+                string selectedFolder = dialogoPasta.SelectedPath;
                 if (folderVariable.Equals("sourceFolder"))
                 {
-                    sourceFolder = dialogoPasta.SelectedPath;
+                    sourceFolder = selectedFolder;
+                    AtualizarImagemDoBotao(Button_Entrada, selectedFolder);
                 }
                 else if (folderVariable.Equals("outputFolder"))
                 {
-                    outputFolder = dialogoPasta.SelectedPath;
+                    outputFolder = selectedFolder;
+                    AtualizarImagemDoBotao2(Button_Saida, selectedFolder);
                 }
+            }
+        }
 
-                // Atualiza o PictureBox fornecido para torná-lo visível
-                pictureBox.Visible = true;
+        private void AtualizarImagemDoBotao(Button botao, string selectedFolder)
+        {
+            if (!string.IsNullOrEmpty(selectedFolder))
+            {
+                Image imagemOkay = Properties.Resources.okay;
+                Image imagemRedimensionada = new Bitmap(imagemOkay, new Size(40, 40));
+                botao.Image = imagemRedimensionada;
+            }
+            else
+            {
+                Image imagemIconPasta = Properties.Resources.icon_entrada;
+                Image imagemRedimensionada = new Bitmap(imagemIconPasta, new Size(40, 40));
+                botao.Image = imagemRedimensionada;
+
+            }
+        }
+
+        private void AtualizarImagemDoBotao2(Button botao, string selectedFolder)
+        {
+            if (!string.IsNullOrEmpty(selectedFolder))
+            {
+                Image imagemOkay = Properties.Resources.okay;
+                Image imagemRedimensionada = new Bitmap(imagemOkay, new Size(40, 40));
+                botao.Image = imagemRedimensionada;
+            }
+            else
+            {
+                Image imagemIconPasta = Properties.Resources.icon_saida;
+                Image imagemRedimensionada = new Bitmap(imagemIconPasta, new Size(40, 40));
+                botao.Image = imagemRedimensionada;
+
             }
         }
 
         private void Button_Entrada_Click(object sender, EventArgs e)
         {
-            ExibirDialogoSelecaoPasta("sourceFolder", PictureBox_Verify1);
+            ExibirDialogoSelecaoPasta("sourceFolder");
         }
-
 
         private void Button_Saida_Click(object sender, EventArgs e)
         {
-            ExibirDialogoSelecaoPasta("outputFolder", PictureBox_Verify2);
+            ExibirDialogoSelecaoPasta("outputFolder");
         }
+
 
         private void BackgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
             OrganizeFiles(sourceFolder, outputFolder);
         }
-
-        private void BackgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
-        {
-            // Atualiza a Barra_De_Progresso no thread da interface do usuário
-            Invoke(new MethodInvoker(delegate
-            {
-                Barra_De_Progresso.Value = e.ProgressPercentage;
-
-                // Verifica se o progresso atingiu 100%
-                if (e.ProgressPercentage == 100)
-                {
-                    // Mostra a mensagem quando a organização estiver concluída
-                    MessageBox.Show("Organização concluída com sucesso!", "Concluído", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    // Reset a ProgressBar após a organização
-                    Barra_De_Progresso.Value = 0;
-
-                    // Esconde o ícone de "verificado"
-                    PictureBox_Verify1.Visible = false;
-                    PictureBox_Verify2.Visible = false;
-
-                    // Reset das pastas de entrada e saída
-                    sourceFolder = "";
-                    outputFolder = "";
-                }
-            }));
-        }
-
 
         private void OrganizeFiles(string sourceFolder, string outputFolder)
         {
@@ -203,8 +188,6 @@ namespace AiVisionCodeOrganizador
 
                 processedFiles++;
                 int progressPercentage = processedFiles * 100 / totalFiles;
-
-                // Relatar o progresso pra progressbar
                 backgroundWorker1.ReportProgress(progressPercentage);
             }
         }
@@ -231,10 +214,10 @@ namespace AiVisionCodeOrganizador
             MessageBox.Show("Organização concluída com sucesso!", "Concluído", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             Barra_De_Progresso.Value = 0;
-            PictureBox_Verify1.Visible = false;
-            PictureBox_Verify2.Visible = false;
             sourceFolder = "";
             outputFolder = "";
+            Button_Entrada.Image = Properties.Resources.icon_entrada;
+            Button_Saida.Image = Properties.Resources.icon_saida;
         }
 
         private void OpenUrlInBrowser(string url)
