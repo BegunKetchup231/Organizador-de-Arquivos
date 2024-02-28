@@ -1,6 +1,10 @@
 C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Release\AiVisionCodeOrganizador.exe.config
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Release\AiVisionCodeOrganizador.exe.manifest
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Release\AiVisionCodeOrganizador.application
 C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Release\AiVisionCodeOrganizador.exe
 C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Release\AiVisionCodeOrganizador.pdb
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Release\AiVisionCodeOrganizador.exe.CodeAnalysisLog.xml
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Release\AiVisionCodeOrganizador.exe.lastcodeanalysissucceeded
 C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Release\Ookii.Dialogs.Wpf.dll
 C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Release\Ookii.Dialogs.Wpf.pdb
 C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Release\Ookii.Dialogs.Wpf.xml
@@ -9,13 +13,9 @@ C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVi
 C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.Properties.Resources.resources
 C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.csproj.GenerateResource.cache
 C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.csproj.CoreCompileInputs.cache
-C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.csproj.CopyComplete
-C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.exe
-C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.pdb
-C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Release\AiVisionCodeOrganizador.exe.manifest
-C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Release\AiVisionCodeOrganizador.application
 C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.TrustInfo.xml
 C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.exe.manifest
 C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.application
-C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Release\AiVisionCodeOrganizador.exe.CodeAnalysisLog.xml
-C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\bin\Release\AiVisionCodeOrganizador.exe.lastcodeanalysissucceeded
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.csproj.CopyComplete
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.exe
+C:\Users\Wellden Moura\Documents\MeusProjetosGitHub\Organizador-de-Arquivos\AiVisionCodeOrganizador\obj\Release\AiVisionCodeOrganizador.pdb

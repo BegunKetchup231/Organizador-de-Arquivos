@@ -25,6 +25,7 @@ namespace AiVisionCodeOrganizador
 
             backgroundWorker1.WorkerReportsProgress = true;
             backgroundWorker1.DoWork += BackgroundWorker1_DoWork;
+            backgroundWorker1.ProgressChanged += BackgroundWorker1_ProgressChanged;
 
             Button_Entrada.Image = Properties.Resources.icon_entrada;
             Button_Saida.Image = Properties.Resources.icon_saida;
@@ -127,6 +128,11 @@ namespace AiVisionCodeOrganizador
             OrganizeFiles(sourceFolder, outputFolder);
         }
 
+        private void BackgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            Barra_De_Progresso.Value = e.ProgressPercentage;
+        }
+
         private void OrganizeFiles(string sourceFolder, string outputFolder)
         {
             var allFiles = Directory.GetFiles(sourceFolder, "*", SearchOption.TopDirectoryOnly)
@@ -188,6 +194,7 @@ namespace AiVisionCodeOrganizador
 
                 processedFiles++;
                 int progressPercentage = processedFiles * 100 / totalFiles;
+
                 backgroundWorker1.ReportProgress(progressPercentage);
             }
         }
@@ -250,11 +257,6 @@ namespace AiVisionCodeOrganizador
         private void Button_Discord_Click(object sender, EventArgs e)
         {
             OpenUrlInBrowser("https://discord.com/invite/Tq8gmMpu5C");
-        }
-
-        private void Button_Update_Click(object sender, EventArgs e)
-        {
-            OpenUrlInBrowser("https://github.com/BegunKetchup231/Organizador_2");
         }
     }
 }
