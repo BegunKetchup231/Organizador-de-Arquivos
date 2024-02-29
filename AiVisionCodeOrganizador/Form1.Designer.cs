@@ -82,27 +82,30 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Controls.Add(this.Label_Titulo, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 6);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0, 6, 0, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(319, 63);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(319, 69);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // Label_Titulo
             // 
-            this.Label_Titulo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Label_Titulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Label_Titulo.AutoSize = true;
+            this.Label_Titulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(16)))), ((int)(((byte)(63)))));
             this.Label_Titulo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Label_Titulo.Font = new System.Drawing.Font("JetBrains Mono NL", 15F, System.Drawing.FontStyle.Bold);
             this.Label_Titulo.ForeColor = System.Drawing.Color.White;
-            this.Label_Titulo.Location = new System.Drawing.Point(15, 18);
+            this.Label_Titulo.Location = new System.Drawing.Point(0, 0);
             this.Label_Titulo.Margin = new System.Windows.Forms.Padding(0);
             this.Label_Titulo.Name = "Label_Titulo";
-            this.Label_Titulo.Size = new System.Drawing.Size(288, 26);
+            this.Label_Titulo.Size = new System.Drawing.Size(319, 26);
             this.Label_Titulo.TabIndex = 0;
             this.Label_Titulo.Text = "Organizador de Arquivos";
+            this.Label_Titulo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tableLayoutPanel3
             // 
@@ -129,6 +132,7 @@
             this.Button_Dev.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Button_Dev.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Button_Dev.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Button_Dev.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.Button_Dev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Dev.Font = new System.Drawing.Font("JetBrains Mono NL", 8.249999F, System.Drawing.FontStyle.Bold);
             this.Button_Dev.ForeColor = System.Drawing.Color.White;
@@ -146,6 +150,7 @@
             this.Button_GitHub.BackColor = System.Drawing.Color.SteelBlue;
             this.Button_GitHub.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Button_GitHub.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Button_GitHub.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.Button_GitHub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_GitHub.Font = new System.Drawing.Font("JetBrains Mono NL", 8.249999F, System.Drawing.FontStyle.Bold);
             this.Button_GitHub.ForeColor = System.Drawing.Color.White;
@@ -163,6 +168,7 @@
             this.Button_Discord.BackColor = System.Drawing.Color.SteelBlue;
             this.Button_Discord.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Button_Discord.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Button_Discord.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.Button_Discord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Discord.Font = new System.Drawing.Font("JetBrains Mono NL", 8.249999F, System.Drawing.FontStyle.Bold);
             this.Button_Discord.ForeColor = System.Drawing.Color.White;
@@ -229,7 +235,7 @@
             this.Button_Organizar.BackColor = System.Drawing.Color.SteelBlue;
             this.Button_Organizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Button_Organizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Button_Organizar.FlatAppearance.BorderColor = System.Drawing.Color.PaleGreen;
+            this.Button_Organizar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Button_Organizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Button_Organizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(16)))), ((int)(((byte)(63)))));
             this.Button_Organizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -251,7 +257,7 @@
             this.Button_Entrada.BackColor = System.Drawing.Color.SteelBlue;
             this.Button_Entrada.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Button_Entrada.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Button_Entrada.FlatAppearance.BorderColor = System.Drawing.Color.PaleGreen;
+            this.Button_Entrada.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Button_Entrada.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Button_Entrada.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(16)))), ((int)(((byte)(63)))));
             this.Button_Entrada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -273,7 +279,7 @@
             this.Button_Saida.BackColor = System.Drawing.Color.SteelBlue;
             this.Button_Saida.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Button_Saida.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Button_Saida.FlatAppearance.BorderColor = System.Drawing.Color.PaleGreen;
+            this.Button_Saida.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Button_Saida.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Button_Saida.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(16)))), ((int)(((byte)(63)))));
             this.Button_Saida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -312,6 +318,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(214)))), ((int)(((byte)(217)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(319, 368);
             this.Controls.Add(this.tableLayoutPanel1);
