@@ -99,8 +99,8 @@
             this.Label_Titulo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Label_Titulo.Font = new System.Drawing.Font("JetBrains Mono NL", 15F, System.Drawing.FontStyle.Bold);
             this.Label_Titulo.ForeColor = System.Drawing.Color.White;
-            this.Label_Titulo.Location = new System.Drawing.Point(0, 0);
-            this.Label_Titulo.Margin = new System.Windows.Forms.Padding(0);
+            this.Label_Titulo.Location = new System.Drawing.Point(0, 2);
+            this.Label_Titulo.Margin = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.Label_Titulo.Name = "Label_Titulo";
             this.Label_Titulo.Size = new System.Drawing.Size(319, 26);
             this.Label_Titulo.TabIndex = 0;
