@@ -81,7 +81,7 @@
             this.tableLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.tableLayoutPanel2.ColumnCount = 1;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Controls.Add(this.Label_Titulo, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 6);
@@ -137,7 +137,7 @@
             this.Button_Dev.Name = "Button_Dev";
             this.Button_Dev.Size = new System.Drawing.Size(98, 40);
             this.Button_Dev.TabIndex = 0;
-            this.Button_Dev.Text = "Dev_";
+            this.Button_Dev.Text = "Criador";
             this.Button_Dev.UseVisualStyleBackColor = false;
             this.Button_Dev.Click += new System.EventHandler(this.Button_Dev_Click);
             // 
@@ -228,7 +228,7 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox1.Image = global::AiVisionCodeOrganizador.Properties.Resources.equation_meme;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 105);
+            this.pictureBox1.Location = new System.Drawing.Point(142, 105);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(41, 41);
