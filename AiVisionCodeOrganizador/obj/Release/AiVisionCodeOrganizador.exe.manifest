@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AiVisionCodeOrganizador.exe" size="2762248">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AiVisionCodeOrganizador.exe" size="2915848">
       <assemblyIdentity name="AiVisionCodeOrganizador" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>KKyxIZMM0e5ankHOi57hxUJOYAv48T//ZzRthM8cRKI=</dsig:DigestValue>
+        <dsig:DigestValue>glISJAIIcW70d2m+Ym8NInJ7dtgf+wIL5Sm/hUO7zT4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
