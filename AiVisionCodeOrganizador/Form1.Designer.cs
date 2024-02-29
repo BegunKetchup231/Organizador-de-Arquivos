@@ -76,7 +76,6 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tableLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.tableLayoutPanel2.ColumnCount = 1;
@@ -98,10 +97,10 @@
             this.Label_Titulo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Label_Titulo.Font = new System.Drawing.Font("JetBrains Mono NL", 15F, System.Drawing.FontStyle.Bold);
             this.Label_Titulo.ForeColor = System.Drawing.Color.White;
-            this.Label_Titulo.Location = new System.Drawing.Point(0, 0);
+            this.Label_Titulo.Location = new System.Drawing.Point(15, 18);
             this.Label_Titulo.Margin = new System.Windows.Forms.Padding(0);
             this.Label_Titulo.Name = "Label_Titulo";
-            this.Label_Titulo.Size = new System.Drawing.Size(319, 26);
+            this.Label_Titulo.Size = new System.Drawing.Size(288, 26);
             this.Label_Titulo.TabIndex = 0;
             this.Label_Titulo.Text = "Organizador de Arquivos";
             // 
@@ -238,10 +237,10 @@
             this.Button_Organizar.ForeColor = System.Drawing.Color.White;
             this.Button_Organizar.Image = global::AiVisionCodeOrganizador.Properties.Resources.icon_organize2;
             this.Button_Organizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_Organizar.Location = new System.Drawing.Point(-1, 149);
+            this.Button_Organizar.Location = new System.Drawing.Point(46, 136);
             this.Button_Organizar.Margin = new System.Windows.Forms.Padding(0);
             this.Button_Organizar.Name = "Button_Organizar";
-            this.Button_Organizar.Size = new System.Drawing.Size(318, 50);
+            this.Button_Organizar.Size = new System.Drawing.Size(217, 50);
             this.Button_Organizar.TabIndex = 2;
             this.Button_Organizar.Text = "Organizar Arquivos";
             this.Button_Organizar.UseVisualStyleBackColor = false;
@@ -260,10 +259,10 @@
             this.Button_Entrada.ForeColor = System.Drawing.Color.White;
             this.Button_Entrada.Image = global::AiVisionCodeOrganizador.Properties.Resources.icon_saida;
             this.Button_Entrada.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_Entrada.Location = new System.Drawing.Point(-1, 1);
+            this.Button_Entrada.Location = new System.Drawing.Point(46, 1);
             this.Button_Entrada.Margin = new System.Windows.Forms.Padding(0);
             this.Button_Entrada.Name = "Button_Entrada";
-            this.Button_Entrada.Size = new System.Drawing.Size(319, 50);
+            this.Button_Entrada.Size = new System.Drawing.Size(217, 50);
             this.Button_Entrada.TabIndex = 0;
             this.Button_Entrada.Text = "Pasta de Entrada";
             this.Button_Entrada.UseVisualStyleBackColor = false;
@@ -282,10 +281,10 @@
             this.Button_Saida.ForeColor = System.Drawing.Color.White;
             this.Button_Saida.Image = global::AiVisionCodeOrganizador.Properties.Resources.icon_entrada;
             this.Button_Saida.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_Saida.Location = new System.Drawing.Point(-1, 52);
+            this.Button_Saida.Location = new System.Drawing.Point(46, 61);
             this.Button_Saida.Margin = new System.Windows.Forms.Padding(0);
             this.Button_Saida.Name = "Button_Saida";
-            this.Button_Saida.Size = new System.Drawing.Size(319, 50);
+            this.Button_Saida.Size = new System.Drawing.Size(217, 50);
             this.Button_Saida.TabIndex = 1;
             this.Button_Saida.Text = "Pasta de Saída";
             this.Button_Saida.UseVisualStyleBackColor = false;
