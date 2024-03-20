@@ -45,6 +45,7 @@
             this.Button_Saida = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.Botao_Fake = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -208,6 +209,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.Button_Organizar);
             this.panel1.Controls.Add(this.Button_Entrada);
@@ -313,6 +315,18 @@
             this.Botao_Fake.UseVisualStyleBackColor = false;
             this.Botao_Fake.Click += new System.EventHandler(this.Botao_Fake_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button1.Location = new System.Drawing.Point(267, 61);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(47, 114);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -358,6 +372,7 @@
         private System.Windows.Forms.Button Button_Entrada;
         private System.Windows.Forms.Button Button_Saida;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

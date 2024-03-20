@@ -258,5 +258,10 @@ namespace AiVisionCodeOrganizador
         {
             OpenUrlInBrowser("https://discord.com/invite/Tq8gmMpu5C");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
